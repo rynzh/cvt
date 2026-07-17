@@ -69,8 +69,8 @@ Using GitHub Template:
 Or using `degit`:
 
 ```bash
-degit rynzh/cvt my-project
-cd my-project
+degit rynzh/cvt [my-project]
+code [my-project]
 
 git init
 git add .
