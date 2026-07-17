@@ -1,0 +1,27 @@
+[project]
+name = "cv-project"
+version = "0.1.0"
+description = "Minimal computer vision project"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "pillow",
+    "matplotlib",
+    "torch",
+    "torchvision",
+    "tqdm",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
