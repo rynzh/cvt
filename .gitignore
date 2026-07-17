@@ -1,39 +1,29 @@
-# Python虚拟环境
-venv/
-env/
+# Python
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# Environment
+.venv/
 
-# 数据集文件
-data/
-*.csv
-*.json
-*.tsv
-*.zip
-*.tar.gz
-
-# 模型文件
-*.h5
-*.pth
-*.pkl
-*.ckpt
-*.pklz
-model/
-
-# 日志文件
-*.log
-
-# 编辑器配置文件
+# IDE
 .vscode/
 .idea/
-
-# 系统文件
 .DS_Store
-Thumbs.db
 
-# 配置文件
-*.env
+# Data and generated files
+data/raw/*
+data/processed/*
+outputs/*
+
+# Keep directories
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!outputs/checkpoints/.gitkeep
+!outputs/predictions/.gitkeep
+
+# Model files
+*.pt
+*.pth
+*.onnx
